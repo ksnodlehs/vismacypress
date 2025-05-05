@@ -3,7 +3,7 @@
 // be labelled as invalid
 // @ts-nocheck
 /// <reference types="Cypress" />
-import { commonLibrary, commonlibrary } from '../../support/libs/common_library';
+import { commonlibrary } from '../../support/libs/common_library';
 
 describe('Browse to amazon.com and make and validate search', 
   {
