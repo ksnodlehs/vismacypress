@@ -31,7 +31,7 @@ In the product details, verify (using assert) that the product title includes th
 * See html report in:
   * cypress/reports/html/
 * See cloud report in:
-  * https://cloud.cypress.io/projects/pqtwrs/runs/1
+  * https://cloud.cypress.io/projects/i4mcqn/runs/1/overview?roarHideRunsWithDiffGroupsAndTags=1
 * Code is explained in the code and configuration files
 
 ## Files and folders
