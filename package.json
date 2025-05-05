@@ -1,0 +1,42 @@
+{
+  "name": "vismacypress",
+  "version": "1.0.0",
+  "description": "Visma pre-task cypress",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ksnodlehs/vismacypress.git"
+  },
+  "keywords": [
+    "visma",
+    "amazon"
+  ],
+  "author": "Kristian Stauffer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ksnodlehs/vismacypress/issues"
+  },
+  "homepage": "https://github.com/ksnodlehs/vismacypress#readme",
+  "devDependencies": {
+    "@testing-library/cypress": "^10.0.3",
+    "cypress": "^14.3.2",
+    "cypress-fail-fast": "^7.1.1",
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "cypress-multi-reporters": "^2.0.5",
+    "cypress-slack-notify": "^1.14.10",
+    "cypress-terminal-report": "^7.1.0",
+    "cypress-xpath": "^2.0.1"
+  },
+  "scripts": {
+    "test": "echo 'Dummy npm package.json script test'",
+    "cy:version": "cypress --version",
+    "cy:run": "cypress run",
+    "cy:e2e:headed": "cypress run --headed -b chrome --spec cypress/e2e/visma/",
+    "cy:e2e:headless": "cypress run --headless -b chrome --spec cypress/e2e/visma/",
+    "cy:e2e:record": "cypress run --record --headless -b chrome --spec cypress/e2e/visma/",
+    "cy:open": "cypress open"
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0"
+  }
+}
