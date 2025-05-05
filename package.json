@@ -31,6 +31,7 @@
     "test": "echo 'Dummy npm package.json script test'",
     "cy:version": "cypress --version",
     "cy:run": "cypress run",
+    "cy:e2e": "cypress run --headed -b chrome --spec cypress/e2e/visma/",
     "cy:e2e:headed": "cypress run --headed -b chrome --spec cypress/e2e/visma/",
     "cy:e2e:headless": "cypress run --headless -b chrome --spec cypress/e2e/visma/",
     "cy:e2e:record": "cypress run --record --headless -b chrome --spec cypress/e2e/visma/",
