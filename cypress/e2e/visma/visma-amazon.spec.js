@@ -3,7 +3,7 @@
 // be labelled as invalid
 // @ts-nocheck
 /// <reference types="Cypress" />
-import { commonlibrary } from '../../support/libs/common_library';
+import { commonLibrary } from '../../support/libs/common_library';
 
 describe('Browse to amazon.com and make and validate search', 
   {
@@ -30,7 +30,10 @@ describe('Browse to amazon.com and make and validate search',
       cy.log("We are in after each, here we can have clean up after each test")
     });
 
-    it('Positive: Browse to amazon.com, search Nikon, sort by highest price, select 8th, validate FTZ II', () => {
+    // Below is now 7th result
+    // it('Positive: Browse to amazon.com, search Nikon, sort by highest price, select 8th, validate FTZ II', () => {
+    // Below is new 8th result
+    it('Positive: Browse to amazon.com, search Nikon, sort by highest price, select 8th, validate Z 9', () => {
 
       // TODO: We could move below to commonLibrary if
       // wanted. Leaving these here for demo purposes
@@ -71,7 +74,8 @@ describe('Browse to amazon.com and make and validate search',
       // From product details page, check the title locator:
       // id="productTitle"
       // Assert if string is not found
-      cy.get('#productTitle').should('contain', 'FTZ II')
+      // cy.get('#productTitle').should('contain', 'FTZ II')
+      cy.get('#productTitle').should('contain', 'Nikon Z 9')
     })
 
     it('Negative: Browse to amazon.com, search Nikon, sort by highest price, select 8th, validate D3X', () => {

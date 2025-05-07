@@ -7,10 +7,10 @@ node_modules
 yarn.lock
 
 # testing
-/cypress/reports
-/cypress/failed
-/cypress/screenshots
-/cypress/videos
+#/cypress/reports
+#/cypress/failed
+#/cypress/screenshots
+#/cypress/videos
 
 # misc
 # dotenv for locally configuring cypress variables
